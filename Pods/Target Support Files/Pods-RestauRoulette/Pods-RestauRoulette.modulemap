@@ -1,0 +1,6 @@
+framework module Pods_RestauRoulette {
+  umbrella header "Pods-RestauRoulette-umbrella.h"
+
+  export *
+  module * { export * }
+}
