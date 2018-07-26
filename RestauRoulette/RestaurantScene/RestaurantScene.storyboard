@@ -30,25 +30,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuJ-27-MnQ">
-                                <rect key="frame" x="90" y="108" width="195" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="02d-bE-iwd"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="showRestaurantDetails:" destination="Rgf-qx-uVT" eventType="touchUpInside" id="t6u-nJ-yll"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZuJ-27-MnQ" firstAttribute="leading" secondItem="k85-90-ud3" secondAttribute="leading" constant="90" id="FGj-0f-ySz"/>
                             <constraint firstItem="kYP-qU-fjp" firstAttribute="centerX" secondItem="gGw-o6-ii2" secondAttribute="centerX" id="aua-Jw-TJo"/>
-                            <constraint firstItem="ZuJ-27-MnQ" firstAttribute="top" secondItem="k85-90-ud3" secondAttribute="top" constant="44" id="dZj-Hk-ADe"/>
                             <constraint firstAttribute="centerY" secondItem="gGw-o6-ii2" secondAttribute="centerY" id="e1b-Ix-ClX"/>
                             <constraint firstItem="kYP-qU-fjp" firstAttribute="top" secondItem="gGw-o6-ii2" secondAttribute="bottom" constant="8" symbolic="YES" id="gb6-Fy-5TO"/>
-                            <constraint firstItem="k85-90-ud3" firstAttribute="trailing" secondItem="ZuJ-27-MnQ" secondAttribute="trailing" constant="90" id="kiF-sj-Xg8"/>
                             <constraint firstAttribute="centerX" secondItem="gGw-o6-ii2" secondAttribute="centerX" id="pHj-Fv-9el"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k85-90-ud3"/>

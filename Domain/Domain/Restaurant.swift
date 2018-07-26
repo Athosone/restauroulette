@@ -8,6 +8,11 @@
 
 import Foundation
 
+public enum RestaurantType {
+    case chinese
+    case french
+}
+
 public struct Restaurant: Codable {
     let name: String
     let image: URL

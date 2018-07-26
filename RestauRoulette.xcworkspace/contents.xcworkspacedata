@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Infrastructure">
+      <FileRef
+         location = "group:NetworkInfrastructure/NetworkInfrastructure.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Infrastructure/Infrastructure.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:PositionInfrastructure/PositionInfrastructure.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Domain/Domain.xcodeproj">
    </FileRef>
