@@ -12,6 +12,7 @@
 		58B4087920E5A033006D8D66 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B4087720E5A033006D8D66 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58B4088A20E5A9B9006D8D66 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4088920E5A9B9006D8D66 /* Reusable.swift */; };
 		58C65AF521094FB000E10910 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C65AF421094FB000E10910 /* CoreLocation.framework */; };
+		58C65B41210E722300E10910 /* RestaurantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C65B40210E722300E10910 /* RestaurantRepository.swift */; };
 		EB38495087391E80237BB955 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194E17E586E18CE088425355 /* Pods_Application.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		58B4087820E5A033006D8D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B4088920E5A9B9006D8D66 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		58C65AF421094FB000E10910 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		58C65B40210E722300E10910 /* RestaurantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRepository.swift; sourceTree = "<group>"; };
 		6B11391E02345A67E6BFEA4E /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
 		B95A80BD200E1FC03259013D /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				58671F53210945F8006BA566 /* PositionRepository.swift */,
+				58C65B40210E722300E10910 /* RestaurantRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				58671F52210945B3006BA566 /* SearchRestaurantUseCase.swift in Sources */,
 				58671F54210945F8006BA566 /* PositionRepository.swift in Sources */,
 				58B4088A20E5A9B9006D8D66 /* Reusable.swift in Sources */,
+				58C65B41210E722300E10910 /* RestaurantRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
