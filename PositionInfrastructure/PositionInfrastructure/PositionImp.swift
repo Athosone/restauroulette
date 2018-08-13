@@ -21,8 +21,4 @@ final class PositionImp: PositionRepository {
     func startUpdate() {
         
     }
-    
-    
-    
-    
 }

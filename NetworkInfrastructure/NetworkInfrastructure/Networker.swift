@@ -22,7 +22,8 @@ final public class Networker {
     }
     
     private func makeDefaultConfiguration() -> URLSessionConfiguration {
-        
+        let configuration = URLSessionConfiguration()
+        return configuration
     }
 }
 
