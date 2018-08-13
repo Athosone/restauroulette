@@ -8,16 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		582891AA210505E700303539 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 582891A8210505E700303539 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		582891B32105062500303539 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891B22105062500303539 /* Restaurant.swift */; };
-		58C65B43210E78BE00E10910 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C65B42210E78BE00E10910 /* TVShow.swift */; };
+		582891B32105062500303539 /* FootGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891B22105062500303539 /* FootGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		582891A5210505E700303539 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582891A8210505E700303539 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		582891A9210505E700303539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		582891B22105062500303539 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		58C65B42210E78BE00E10910 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		582891B22105062500303539 /* FootGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +50,7 @@
 			children = (
 				582891A8210505E700303539 /* Domain.h */,
 				582891A9210505E700303539 /* Info.plist */,
-				582891B22105062500303539 /* Restaurant.swift */,
-				58C65B42210E78BE00E10910 /* TVShow.swift */,
+				582891B22105062500303539 /* FootGesture.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -137,8 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C65B43210E78BE00E10910 /* TVShow.swift in Sources */,
-				582891B32105062500303539 /* Restaurant.swift in Sources */,
+				582891B32105062500303539 /* FootGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

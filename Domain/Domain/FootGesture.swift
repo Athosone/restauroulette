@@ -13,7 +13,7 @@ public enum RestaurantType {
     case french
 }
 
-public struct Restaurant: Codable {
+public struct GestureTrick: Codable {
     let name: String
     let image: URL
 }

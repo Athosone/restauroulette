@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		582891952104FD3200303539 /* RootSceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891942104FD3200303539 /* RootSceneCoordinator.swift */; };
 		582891982104FE3500303539 /* RestaurantScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582891972104FE3500303539 /* RestaurantScene.storyboard */; };
-		5828919A210505BC00303539 /* NearestRestaurantState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58289199210505BC00303539 /* NearestRestaurantState.swift */; };
+		5828919A210505BC00303539 /* ListGestureTricksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58289199210505BC00303539 /* ListGestureTricksState.swift */; };
 		582891B12105060D00303539 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582891B02105060D00303539 /* Domain.framework */; };
 		582891B521050B8100303539 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891B421050B8100303539 /* AppNavigationController.swift */; };
 		582891B821050E9900303539 /* FiltersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891B721050E9900303539 /* FiltersCoordinator.swift */; };
-		582891BA21050F1300303539 /* RestaurantsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891B921050F1300303539 /* RestaurantsCoordinator.swift */; };
+		582891BA21050F1300303539 /* ListGestureTricksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582891B921050F1300303539 /* ListGestureTricksCoordinator.swift */; };
 		583A03BF20FAA39F00CC5036 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583A03BE20FAA39F00CC5036 /* AppReducer.swift */; };
 		58671F45210548C7006BA566 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58671F44210548C7006BA566 /* Coordinator.swift */; };
 		58671F4721054914006BA566 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58671F4621054914006BA566 /* Reducers.swift */; };
@@ -30,7 +30,7 @@
 		58B4088220E5A477006D8D66 /* NearestRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4088120E5A477006D8D66 /* NearestRestaurantViewController.swift */; };
 		58B4088620E5A68F006D8D66 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4088520E5A68F006D8D66 /* AppState.swift */; };
 		58B4088E20E5B3C1006D8D66 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4088D20E5B3C1006D8D66 /* Actions.swift */; };
-		58B4089120E5B4DD006D8D66 /* UI+ReuseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4089020E5B4DD006D8D66 /* UI+ReuseProvider.swift */; };
+		58D84B4E2122321C003E33FC /* AthosUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D84B4D2122321C003E33FC /* AthosUIKit.framework */; };
 		E6BDB620B7C77B8C0D0F32BC /* Pods_RestauRoulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9A2809CFEF15C395A3EE9D /* Pods_RestauRoulette.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +39,11 @@
 		3EE284D80B974E1F58888605 /* Pods-RestauRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestauRoulette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestauRoulette/Pods-RestauRoulette.debug.xcconfig"; sourceTree = "<group>"; };
 		582891942104FD3200303539 /* RootSceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSceneCoordinator.swift; sourceTree = "<group>"; };
 		582891972104FE3500303539 /* RestaurantScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantScene.storyboard; sourceTree = "<group>"; };
-		58289199210505BC00303539 /* NearestRestaurantState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestRestaurantState.swift; sourceTree = "<group>"; };
+		58289199210505BC00303539 /* ListGestureTricksState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGestureTricksState.swift; sourceTree = "<group>"; };
 		582891B02105060D00303539 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582891B421050B8100303539 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		582891B721050E9900303539 /* FiltersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersCoordinator.swift; sourceTree = "<group>"; };
-		582891B921050F1300303539 /* RestaurantsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsCoordinator.swift; sourceTree = "<group>"; };
+		582891B921050F1300303539 /* ListGestureTricksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGestureTricksCoordinator.swift; sourceTree = "<group>"; };
 		583A03BE20FAA39F00CC5036 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		58671F44210548C7006BA566 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		58671F4621054914006BA566 /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		58B4088120E5A477006D8D66 /* NearestRestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestRestaurantViewController.swift; sourceTree = "<group>"; };
 		58B4088520E5A68F006D8D66 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		58B4088D20E5B3C1006D8D66 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
-		58B4089020E5B4DD006D8D66 /* UI+ReuseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+ReuseProvider.swift"; sourceTree = "<group>"; };
+		58D84B4D2122321C003E33FC /* AthosUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AthosUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9A2809CFEF15C395A3EE9D /* Pods_RestauRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestauRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D84B4E2122321C003E33FC /* AthosUIKit.framework in Frameworks */,
 				582891B12105060D00303539 /* Domain.framework in Frameworks */,
 				58B4088020E5A05F006D8D66 /* Application.framework in Frameworks */,
 				E6BDB620B7C77B8C0D0F32BC /* Pods_RestauRoulette.framework in Frameworks */,
@@ -103,8 +104,8 @@
 			children = (
 				58B4088120E5A477006D8D66 /* NearestRestaurantViewController.swift */,
 				582891972104FE3500303539 /* RestaurantScene.storyboard */,
-				58289199210505BC00303539 /* NearestRestaurantState.swift */,
-				582891B921050F1300303539 /* RestaurantsCoordinator.swift */,
+				58289199210505BC00303539 /* ListGestureTricksState.swift */,
+				582891B921050F1300303539 /* ListGestureTricksCoordinator.swift */,
 			);
 			path = RestaurantScene;
 			sourceTree = "<group>";
@@ -162,7 +163,6 @@
 			children = (
 				58671F4821054D03006BA566 /* Navigation */,
 				582891B621050E7D00303539 /* FiltersScene */,
-				58B4088F20E5B4D1006D8D66 /* UIExtensions */,
 				582891962104FE2700303539 /* RestaurantScene */,
 				582891932104FD1100303539 /* RootScene */,
 				583A03BD20FA9D9100CC5036 /* Application */,
@@ -177,17 +177,10 @@
 			path = RestauRoulette;
 			sourceTree = "<group>";
 		};
-		58B4088F20E5B4D1006D8D66 /* UIExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				58B4089020E5B4DD006D8D66 /* UI+ReuseProvider.swift */,
-			);
-			path = UIExtensions;
-			sourceTree = "<group>";
-		};
 		75C29355A7985B9376BFD66D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58D84B4D2122321C003E33FC /* AthosUIKit.framework */,
 				582891B02105060D00303539 /* Domain.framework */,
 				58B4087F20E5A05F006D8D66 /* Application.framework */,
 				DC9A2809CFEF15C395A3EE9D /* Pods_RestauRoulette.framework */,
@@ -310,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				58B4086720E59C99006D8D66 /* AppCoordinator.swift in Sources */,
-				58B4089120E5B4DD006D8D66 /* UI+ReuseProvider.swift in Sources */,
 				58671F45210548C7006BA566 /* Coordinator.swift in Sources */,
 				58B4085720E59B12006D8D66 /* SecondViewController.swift in Sources */,
 				58671F4E21054DCF006BA566 /* curry.swift in Sources */,
@@ -325,8 +317,8 @@
 				58B4086920E59FAF006D8D66 /* TabBarController.swift in Sources */,
 				58B4088E20E5B3C1006D8D66 /* Actions.swift in Sources */,
 				582891B521050B8100303539 /* AppNavigationController.swift in Sources */,
-				582891BA21050F1300303539 /* RestaurantsCoordinator.swift in Sources */,
-				5828919A210505BC00303539 /* NearestRestaurantState.swift in Sources */,
+				582891BA21050F1300303539 /* ListGestureTricksCoordinator.swift in Sources */,
+				5828919A210505BC00303539 /* ListGestureTricksState.swift in Sources */,
 				582891952104FD3200303539 /* RootSceneCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

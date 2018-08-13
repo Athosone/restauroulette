@@ -21,6 +21,9 @@
       location = "group:Application/Application.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:AthosUIKit/AthosUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RestauRoulette.xcodeproj">
    </FileRef>
    <FileRef

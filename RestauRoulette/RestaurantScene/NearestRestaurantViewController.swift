@@ -8,13 +8,15 @@
 
 import UIKit
 
-protocol NearestRestaurantNavigation {
+protocol ListGestureTricksNavigation {
     func showFilters()
     func showRestaurantDetails()
 }
 
 final class NearestRestaurantViewController: UIViewController {
-    var navigation: NearestRestaurantNavigation!
+    var navigation: ListGestureTricksNavigation!
+    
+    //todo replace by state with a select of the state of this vc particularly
     private var viewModel: NearestRestaurantViewModel!
     
     override func viewDidLoad() {
@@ -31,6 +33,6 @@ final class NearestRestaurantViewController: UIViewController {
 }
 
 
-final class NearestRestaurantViewModel {
+final class ListGestureTricksViewModel {
     
 }

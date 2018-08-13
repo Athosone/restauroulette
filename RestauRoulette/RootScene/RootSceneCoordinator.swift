@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Base coordinator for all sub views
 final class RootSceneCoordinator: NSObject, Coordinator {
     var rootViewController: UIViewController {
         return _rootViewController
@@ -22,12 +23,12 @@ final class RootSceneCoordinator: NSObject, Coordinator {
     
     func start() {
         let firstSceneVC = UIStoryboard.init(name: "RestaurantScene", bundle: nil).instantiateInitialViewController()! as! UINavigationController
-        let restaurantsCoordinator = RestaurantsCoordinator(firstSceneVC)
+        let restaurantsCoordinator = ListGestureTricksCoordinator(firstSceneVC)
     
         self.childCoordinators.append(restaurantsCoordinator)
         _rootViewController.setViewControllers([firstSceneVC], animated: true)
         _rootViewController.delegate = self
-        store.dispatch(NavigationAction.restaurantsScene(restaurantsCoordinator))
+        store.dispatch(NavigationAction.listGestureTricksScene(restaurantsCoordinator))
     }
 }
 

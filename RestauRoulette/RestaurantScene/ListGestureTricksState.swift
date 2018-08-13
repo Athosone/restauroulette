@@ -10,6 +10,6 @@ import Foundation
 import ReSwift
 import Domain
 
-struct NearestRestaurantState: StateType, Codable {
-    var restaurants: [Restaurant]?
+struct ListGestureTricksState: StateType, Codable {
+    var restaurants: [GestureTrick]?
 }

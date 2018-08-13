@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
-        store.dispatch(NavigationAction.didLaunch(window!, launchOptions))
+        store.dispatch(NavigationAction.appDidLaunch(window!, launchOptions))
         return true
     }
 }

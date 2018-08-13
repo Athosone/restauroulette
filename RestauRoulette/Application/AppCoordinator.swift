@@ -10,6 +10,8 @@ import UIKit
 import Application
 import ReSwift
 
+// Entry point
+// Manage app navigation
 final class AppCoordinator: Coordinator {
     var rootViewController: UIViewController {
         return _rootViewController

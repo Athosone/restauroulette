@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-final class RestaurantsCoordinator: Coordinator {
+final class ListGestureTricksCoordinator: Coordinator {
     var rootViewController: UIViewController {
         return _rootViewController
     }
@@ -29,7 +29,7 @@ final class RestaurantsCoordinator: Coordinator {
     }
 }
 
-extension RestaurantsCoordinator: NearestRestaurantNavigation {
+extension ListGestureTricksCoordinator: ListGestureTricksNavigation {
     func showRestaurantDetails() {
         
     }

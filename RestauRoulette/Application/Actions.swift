@@ -10,8 +10,8 @@ import ReSwift
 import UIKit
 
 enum NavigationAction: Action {
-    case didLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)
+    case appDidLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)
     case rootScene(Coordinator)
-    case restaurantsScene(Coordinator)
+    case listGestureTricksScene(Coordinator)
     case filters
 }

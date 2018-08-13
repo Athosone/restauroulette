@@ -11,5 +11,5 @@ import Foundation
 
 struct AppState: StateType, Codable {
     let navigationState: NavigationState
-    let nearestRestaurantState: NearestRestaurantState?
+    let listGestureTricksState: ListGestureTricksState?
 }

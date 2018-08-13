@@ -17,14 +17,14 @@ func navigationReducer(action: Action, state: NavigationState?) -> NavigationSta
     }
 
     switch (action, state?.coordinator?.rootViewController) {
-    case (.didLaunch(let window, let options), _):
+    case (.appDidLaunch(let window, let options), _):
         let appCoordinator = AppCoordinator(window: window, launchingOptions: options)
         return NavigationState(coordinator: appCoordinator)
     case (.filters, let rootViewController as UINavigationController) :
         return NavigationState(coordinator: FiltersCoordinator(rootViewController: rootViewController))
     case (.rootScene(let coord), _):
         return NavigationState(coordinator: coord)
-    case (.restaurantsScene(let coord), _):
+    case (.listGestureTricksScene(let coord), _):
         return NavigationState(coordinator: coord)
     default: return currentState
     }
