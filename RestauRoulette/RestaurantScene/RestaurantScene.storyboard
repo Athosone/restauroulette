@@ -12,7 +12,7 @@
         <!--Coucou-->
         <scene sceneID="Jpu-sa-gyO">
             <objects>
-                <viewController storyboardIdentifier="NearestRestaurantViewController" id="Rgf-qx-uVT" customClass="NearestRestaurantViewController" customModule="RestauRoulette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListGestureTricksViewController" id="Rgf-qx-uVT" customClass="ListGestureTricksViewController" customModule="RestauRoulette" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FOi-jH-XEd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

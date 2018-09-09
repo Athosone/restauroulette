@@ -22,7 +22,7 @@ final class ListGestureTricksCoordinator: Coordinator {
     }
     
     func start() {
-        guard let nearest = rootViewController.children.first as? NearestRestaurantViewController else {
+        guard let nearest = rootViewController.children.first as? ListGestureTricksViewController else {
             return
         }
         nearest.navigation = self

@@ -13,11 +13,11 @@ protocol ListGestureTricksNavigation {
     func showRestaurantDetails()
 }
 
-final class NearestRestaurantViewController: UIViewController {
+final class ListGestureTricksViewController: UIViewController {
     var navigation: ListGestureTricksNavigation!
     
     //todo replace by state with a select of the state of this vc particularly
-    private var viewModel: NearestRestaurantViewModel!
+    private var viewModel: ListGestureTricksViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()        
