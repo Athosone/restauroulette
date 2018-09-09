@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		58671F52210945B3006BA566 /* TenantUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58671F51210945B3006BA566 /* TenantUseCase.swift */; };
 		58671F54210945F8006BA566 /* PositionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58671F53210945F8006BA566 /* PositionRepository.swift */; };
+		58AF373F2145C76A00CC5A94 /* TenantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF373E2145C76A00CC5A94 /* TenantRepository.swift */; };
 		58B4087920E5A033006D8D66 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B4087720E5A033006D8D66 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58C65AF521094FB000E10910 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C65AF421094FB000E10910 /* CoreLocation.framework */; };
 		EB38495087391E80237BB955 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194E17E586E18CE088425355 /* Pods_Application.framework */; };
@@ -18,6 +19,7 @@
 		194E17E586E18CE088425355 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58671F51210945B3006BA566 /* TenantUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantUseCase.swift; sourceTree = "<group>"; };
 		58671F53210945F8006BA566 /* PositionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionRepository.swift; sourceTree = "<group>"; };
+		58AF373E2145C76A00CC5A94 /* TenantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantRepository.swift; sourceTree = "<group>"; };
 		58B4087420E5A033006D8D66 /* Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B4087720E5A033006D8D66 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		58B4087820E5A033006D8D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				58671F53210945F8006BA566 /* PositionRepository.swift */,
+				58AF373E2145C76A00CC5A94 /* TenantRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AF373F2145C76A00CC5A94 /* TenantRepository.swift in Sources */,
 				58671F52210945B3006BA566 /* TenantUseCase.swift in Sources */,
 				58671F54210945F8006BA566 /* PositionRepository.swift in Sources */,
 			);

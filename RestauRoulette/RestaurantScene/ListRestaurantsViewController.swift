@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Application
 
 protocol ListRestaurantsNavigation {
     func showFilters()
@@ -14,10 +15,10 @@ protocol ListRestaurantsNavigation {
 }
 
 final class ListRestaurantsViewController: UIViewController {
-    var navigation: ListRestaurantsNavigation!
     
+    var navigation: ListRestaurantsNavigation!
     //todo replace by state with a select of the state of this vc particularly
-    private var viewModel: ListGestureTricksViewModel!
+    var viewModel: ListRestaurantsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()        
@@ -30,9 +31,4 @@ final class ListRestaurantsViewController: UIViewController {
     @IBAction func showRestaurantDetails(_ sender: Any) {
         navigation.showRestaurantDetails()
     }
-}
-
-
-final class ListGestureTricksViewModel {
-    
 }

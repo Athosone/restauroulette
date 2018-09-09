@@ -10,11 +10,15 @@ import Foundation
 import Application
 import RxSwift
 
-public final class YelpRepository: SearchRepository {
+public final class YelpRepository: TenantRepository {
     
     static let apiKey = "NJzdiaOCCPtVjYEz5u7McMaIMPsRfkmSlRR14t7pljQ9Onoqsaia7lYVs_hSMEII3EvvijViK4a2P5SNLcvJsjefY4CGFifMiw0uDPIH49k6LvTmcxd2zaH2yydZW3Yx"
     
     public func searchTenant(by location: CLLocation) -> Single<[Restaurant]> {
-        
+        return Single.never()
+    }
+    
+    public func searchTenant(by term: String) -> Single<[Restaurant]> {
+        return Single.never()
     }
 }

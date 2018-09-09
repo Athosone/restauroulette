@@ -13,5 +13,9 @@ import RxSwift
 
 public final class TenantUseCase {
     
-    init() {}
+    private let tenantRepository: TenantRepository
+    
+    public init(tenantRepository: TenantRepository) {
+        self.tenantRepository = tenantRepository
+    }
 }

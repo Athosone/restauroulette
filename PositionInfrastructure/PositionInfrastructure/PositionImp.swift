@@ -12,7 +12,11 @@ import RxSwift
 import CoreLocation
 
 final class PositionImp: PositionRepository {
-    var currentLocation: PublishSubject<CLLocation> = PublishSubject()
+    private var _currentLocation: PublishSubject<CLLocation> = PublishSubject()
+    
+    public let currentLocation: Observable<CLLocation> = {
+        return _currentLocation.asObservable()
+    }
     
     func initialize() -> Single<Bool> {
         return Single.never()
