@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ListGestureTricksNavigation {
+protocol ListRestaurantsNavigation {
     func showFilters()
     func showRestaurantDetails()
 }
 
-final class ListGestureTricksViewController: UIViewController {
-    var navigation: ListGestureTricksNavigation!
+final class ListRestaurantsViewController: UIViewController {
+    var navigation: ListRestaurantsNavigation!
     
     //todo replace by state with a select of the state of this vc particularly
     private var viewModel: ListGestureTricksViewModel!

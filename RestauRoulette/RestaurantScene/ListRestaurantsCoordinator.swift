@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-final class ListGestureTricksCoordinator: Coordinator {
+final class ListRestaurantsCoordinator: Coordinator {
     var rootViewController: UIViewController {
         return _rootViewController
     }
@@ -22,14 +22,14 @@ final class ListGestureTricksCoordinator: Coordinator {
     }
     
     func start() {
-        guard let nearest = rootViewController.children.first as? ListGestureTricksViewController else {
+        guard let nearest = rootViewController.children.first as? ListRestaurantsViewController else {
             return
         }
         nearest.navigation = self
     }
 }
 
-extension ListGestureTricksCoordinator: ListGestureTricksNavigation {
+extension ListRestaurantsCoordinator: ListRestaurantsNavigation {
     func showRestaurantDetails() {
         
     }

@@ -12,6 +12,6 @@ import UIKit
 enum NavigationAction: Action {
     case appDidLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)
     case rootScene(Coordinator)
-    case listGestureTricksScene(Coordinator)
+    case listRestaurantsScene(Coordinator)
     case filters
 }

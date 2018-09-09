@@ -22,9 +22,8 @@ func navigationReducer(action: Action, state: NavigationState?) -> NavigationSta
         return NavigationState(coordinator: appCoordinator)
     case (.filters, let rootViewController as UINavigationController) :
         return NavigationState(coordinator: FiltersCoordinator(rootViewController: rootViewController))
-    case (.rootScene(let coord), _):
-        return NavigationState(coordinator: coord)
-    case (.listGestureTricksScene(let coord), _):
+    case (.rootScene(let coord), _),
+         (.listRestaurantsScene(let coord), _):
         return NavigationState(coordinator: coord)
     default: return currentState
     }

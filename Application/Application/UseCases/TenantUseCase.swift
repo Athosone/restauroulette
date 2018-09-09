@@ -11,7 +11,7 @@ import Domain
 import CoreLocation
 import RxSwift
 
-public final class FootGestureUseCase {
+public final class TenantUseCase {
     
     init() {}
 }
