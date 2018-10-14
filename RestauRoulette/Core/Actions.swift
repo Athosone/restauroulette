@@ -11,7 +11,7 @@ import UIKit
 
 enum NavigationAction: Action {
     case appDidLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)
-    case rootScene(Coordinator)
-    case listRestaurantsScene(Coordinator)
-    case filters
+    case rootScene(TabBarController)
+    case listRestaurantsScene(UINavigationController)
+    case filters(UINavigationController)
 }

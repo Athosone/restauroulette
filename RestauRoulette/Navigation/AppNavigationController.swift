@@ -19,7 +19,9 @@ extension AppNavigationContoller: StoreSubscriber {
     typealias StoreSubscriberStateType = NavigationState
     
     func newState(state: NavigationState) {
-        state.coordinator?.start()
+        guard let newCoordinator = state.coordinator else { return }
+        state.previousCoordinator?.addChildCoordinator(newCoordinator)
+        newCoordinator.start()
     }
     
     func subscribeToNavigationState() {

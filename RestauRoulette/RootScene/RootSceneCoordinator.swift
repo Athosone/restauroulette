@@ -23,12 +23,9 @@ final class RootSceneCoordinator: NSObject, Coordinator {
     
     func start() {
         let firstSceneVC = UIStoryboard.init(name: "RestaurantScene", bundle: nil).instantiateInitialViewController()! as! UINavigationController
-        let restaurantsCoordinator = ListRestaurantsCoordinator(firstSceneVC)
-    
-        self.childCoordinators.append(restaurantsCoordinator)
         _rootViewController.setViewControllers([firstSceneVC], animated: true)
         _rootViewController.delegate = self
-        store.dispatch(NavigationAction.listRestaurantsScene(restaurantsCoordinator))
+        store.dispatch(NavigationAction.listRestaurantsScene(firstSceneVC))
     }
 }
 

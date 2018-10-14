@@ -28,11 +28,9 @@ final class AppCoordinator: Coordinator {
     }
     
     func start() {
-        let rootsceneCoordinator = RootSceneCoordinator(_rootViewController)
-        childCoordinators.append(rootsceneCoordinator)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
-        store.dispatch(NavigationAction.rootScene(rootsceneCoordinator))
+        store.dispatch(NavigationAction.rootScene(_rootViewController))
     }
 }
 

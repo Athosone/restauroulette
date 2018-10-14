@@ -10,17 +10,25 @@ import Foundation
 import ReSwift
 
 struct NavigationState: StateType, Codable {
+    let previousCoordinator: Coordinator?
     let coordinator: Coordinator?
-    var coordinatorId: String {
+    
+    var currentCoordinatorId: String {
         return String(describing: coordinator)
     }
     
-    init(coordinator: Coordinator? = nil) {
-        self.coordinator = coordinator
+    var previousCoordinatorId: String {
+        return String(describing: previousCoordinator)
+    }
+    
+    init(_ previousCoordinator: Coordinator?, _ newCoordinator: Coordinator?) {
+        self.coordinator = newCoordinator
+        self.previousCoordinator = previousCoordinator
     }
     
     func encode(to encoder: Encoder) throws {}
     init(from decoder: Decoder) throws {
         coordinator = nil
+        previousCoordinator = nil
     }
 }

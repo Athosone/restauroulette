@@ -107,8 +107,8 @@
 				58960E442128C06400FD641D /* ListRestaurantsViewController.swift */,
 				582891972104FE3500303539 /* RestaurantScene.storyboard */,
 				58289199210505BC00303539 /* ListRestaurantsState.swift */,
-				582891B921050F1300303539 /* ListRestaurantsCoordinator.swift */,
 				58C67C842145CBDD007515E9 /* ListRestaurantsViewModel.swift */,
+				582891B921050F1300303539 /* ListRestaurantsCoordinator.swift */,
 			);
 			path = RestaurantScene;
 			sourceTree = "<group>";
@@ -127,9 +127,7 @@
 				58B4086620E59C99006D8D66 /* AppCoordinator.swift */,
 				58B4085220E59B12006D8D66 /* AppDelegate.swift */,
 				58B4088520E5A68F006D8D66 /* AppState.swift */,
-				58B4088D20E5B3C1006D8D66 /* Actions.swift */,
 				583A03BE20FAA39F00CC5036 /* AppReducer.swift */,
-				582891B421050B8100303539 /* AppNavigationController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -137,10 +135,22 @@
 		58671F4821054D03006BA566 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				582891B421050B8100303539 /* AppNavigationController.swift */,
 				58671F4921054D1C006BA566 /* NavigationState.swift */,
 				58671F4B21054D3F006BA566 /* NavigationReducer.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		58A157C82173B3FD0047E258 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				58B4088D20E5B3C1006D8D66 /* Actions.swift */,
+				58671F44210548C7006BA566 /* Coordinator.swift */,
+				58671F4621054914006BA566 /* Reducers.swift */,
+				58671F4D21054DCF006BA566 /* curry.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		58B4084620E59B12006D8D66 = {
@@ -164,18 +174,16 @@
 		58B4085120E59B12006D8D66 /* RestauRoulette */ = {
 			isa = PBXGroup;
 			children = (
+				58A157C82173B3FD0047E258 /* Core */,
+				583A03BD20FA9D9100CC5036 /* Application */,
 				58671F4821054D03006BA566 /* Navigation */,
+				582891932104FD1100303539 /* RootScene */,
 				582891B621050E7D00303539 /* FiltersScene */,
 				582891962104FE2700303539 /* RestaurantScene */,
-				582891932104FD1100303539 /* RootScene */,
-				583A03BD20FA9D9100CC5036 /* Application */,
 				58B4085620E59B12006D8D66 /* SecondViewController.swift */,
 				58B4085B20E59B15006D8D66 /* Assets.xcassets */,
 				58B4085D20E59B15006D8D66 /* LaunchScreen.storyboard */,
 				58B4086020E59B15006D8D66 /* Info.plist */,
-				58671F44210548C7006BA566 /* Coordinator.swift */,
-				58671F4621054914006BA566 /* Reducers.swift */,
-				58671F4D21054DCF006BA566 /* curry.swift */,
 			);
 			path = RestauRoulette;
 			sourceTree = "<group>";

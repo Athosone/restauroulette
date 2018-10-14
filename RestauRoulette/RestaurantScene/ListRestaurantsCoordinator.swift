@@ -35,7 +35,7 @@ extension ListRestaurantsCoordinator: ListRestaurantsNavigation {
     }
     
     func showFilters() {
-        store.dispatch(NavigationAction.filters)
+        store.dispatch(NavigationAction.filters(_rootViewController))
     }    
 }
 
