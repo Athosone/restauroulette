@@ -9,7 +9,7 @@
 import ReSwift
 import Foundation
 
-struct AppState: StateType, Codable {
+struct AppState: StateType, Codable, Equatable {
     let navigationState: NavigationState
-    let listRestaurantsState: ListRestaurantsState?
+    let listRestaurantsState: ListRestaurantsState
 }

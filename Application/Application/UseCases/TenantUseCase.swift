@@ -18,4 +18,11 @@ public final class TenantUseCase {
     public init(tenantRepository: TenantRepository) {
         self.tenantRepository = tenantRepository
     }
+    
+    public func fetchTenants(searchTerm: String) -> Single<[Restaurant]> {
+        //return tenantRepository.searchTenantBy(term: searchTerm)
+        return Observable
+            .just([Restaurant(name: searchTerm, image: URL(string: "https://toto.com")!)])
+            .asSingle()
+    }
 }

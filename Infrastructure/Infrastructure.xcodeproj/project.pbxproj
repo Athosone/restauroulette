@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58A157CF2173BFC50047E258 /* NetworkInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A157CE2173BFC50047E258 /* NetworkInfrastructure.framework */; };
 		58C65B2F2109601E00E10910 /* Infrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C65B2D2109601E00E10910 /* Infrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58C65B3D210E71C000E10910 /* YelpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C65B3C210E71C000E10910 /* YelpRepository.swift */; };
 		58C65B3F210E71D700E10910 /* Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C65B3E210E71D700E10910 /* Application.framework */; };
@@ -16,6 +17,7 @@
 /* Begin PBXFileReference section */
 		0011B38F258334D9A100096C /* Pods_Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		287DA1143F6C472636F4502A /* Pods-Infrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infrastructure.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Infrastructure/Pods-Infrastructure.release.xcconfig"; sourceTree = "<group>"; };
+		58A157CE2173BFC50047E258 /* NetworkInfrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkInfrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C65B2A2109601E00E10910 /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C65B2D2109601E00E10910 /* Infrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infrastructure.h; sourceTree = "<group>"; };
 		58C65B2E2109601E00E10910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A157CF2173BFC50047E258 /* NetworkInfrastructure.framework in Frameworks */,
 				58C65B3F210E71D700E10910 /* Application.framework in Frameworks */,
 				F860314E3D4E830557091DE8 /* Pods_Infrastructure.framework in Frameworks */,
 			);
@@ -77,6 +80,7 @@
 		940447697AF4C85D7466F5D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58A157CE2173BFC50047E258 /* NetworkInfrastructure.framework */,
 				58C65B3E210E71D700E10910 /* Application.framework */,
 				0011B38F258334D9A100096C /* Pods_Infrastructure.framework */,
 			);

@@ -13,7 +13,12 @@ public enum RestaurantType {
     case french
 }
 
-public struct Restaurant: Codable {
-    let name: String
-    let image: URL
+public struct Restaurant: Codable, Equatable {
+    public let name: String
+    public let image: URL
+    
+    public init(name: String, image: URL) {
+        self.name = name
+        self.image = image
+    }
 }

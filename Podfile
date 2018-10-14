@@ -5,11 +5,11 @@ use_frameworks!
 
 def Rx_pods
   pod 'ReSwift'
-  pod 'RxSwift' 
+  pod 'RxSwift'
 end
 
 target 'Infrastructure' do
-  	project 'Infrastructure/Infrastructure'  
+  	project 'Infrastructure/Infrastructure'
   	workspace 'RestauRoulette.xcworkspace'
 
     pod 'ReSwift'
@@ -26,7 +26,7 @@ end
 
 
 target 'NetworkInfrastructure' do
-  	project 'NetworkInfrastructure/NetworkInfrastructure'  
+  	project 'NetworkInfrastructure/NetworkInfrastructure'
   	workspace 'RestauRoulette.xcworkspace'
 
     pod 'ReSwift'
@@ -34,7 +34,7 @@ target 'NetworkInfrastructure' do
 end
 
 target 'Application' do
-  	project 'Application/Application'  
+  	project 'Application/Application'
   	workspace 'RestauRoulette.xcworkspace'
 
     pod 'ReSwift'
@@ -42,9 +42,10 @@ target 'Application' do
 end
 
 target 'RestauRoulette' do
-  project 'RestauRoulette'  
+  project 'RestauRoulette'
   workspace 'RestauRoulette.xcworkspace'
 
   pod 'ReSwift'
   pod 'RxSwift'
+  pod 'Swinject'
 end

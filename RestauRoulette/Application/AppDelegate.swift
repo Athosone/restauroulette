@@ -12,7 +12,7 @@ import ReSwift
 let store = Store(
     reducer: appReducer,
     state: nil,
-    middleware: [])
+    middleware: [fetchTenantsMiddleWare])
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
+        Configuration.shared.configure()
         store.dispatch(NavigationAction.appDidLaunch(window!, launchOptions))
         return true
     }

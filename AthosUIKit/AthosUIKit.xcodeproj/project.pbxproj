@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5803A2E02122319700927920 /* AthosUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5803A2DE2122319700927920 /* AthosUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5839C58C212233D200BCA73D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5839C58B212233D200BCA73D /* Reusable.swift */; };
+		58A157D32173D7240047E258 /* ListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A157D22173D7240047E258 /* ListUI.swift */; };
 		58D84B4C21223207003E33FC /* UI+ReuseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D84B4A212231FD003E33FC /* UI+ReuseProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -17,6 +18,7 @@
 		5803A2DE2122319700927920 /* AthosUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AthosUIKit.h; sourceTree = "<group>"; };
 		5803A2DF2122319700927920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5839C58B212233D200BCA73D /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		58A157D22173D7240047E258 /* ListUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUI.swift; sourceTree = "<group>"; };
 		58D84B4A212231FD003E33FC /* UI+ReuseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+ReuseProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 				58D84B4B212231FD003E33FC /* UIExtensions */,
 				5803A2DE2122319700927920 /* AthosUIKit.h */,
 				5803A2DF2122319700927920 /* Info.plist */,
+				58A157D22173D7240047E258 /* ListUI.swift */,
 			);
 			path = AthosUIKit;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5839C58C212233D200BCA73D /* Reusable.swift in Sources */,
+				58A157D32173D7240047E258 /* ListUI.swift in Sources */,
 				58D84B4C21223207003E33FC /* UI+ReuseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

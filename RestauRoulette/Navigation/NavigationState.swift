@@ -9,7 +9,11 @@
 import Foundation
 import ReSwift
 
-struct NavigationState: StateType, Codable {
+struct NavigationState: StateType, Codable, Equatable {
+    static func == (lhs: NavigationState, rhs: NavigationState) -> Bool {
+        return lhs.currentCoordinatorId == rhs.currentCoordinatorId
+    }
+    
     let previousCoordinator: Coordinator?
     let coordinator: Coordinator?
     

@@ -11,6 +11,6 @@ import ReSwift
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
         navigationState: navigationReducer(action: action, state: state?.navigationState),
-        listRestaurantsState: nil
+        listRestaurantsState: listTenantsReducer(action: action, state: state?.listRestaurantsState)
     )
 }

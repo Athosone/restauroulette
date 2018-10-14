@@ -8,6 +8,7 @@
 
 import ReSwift
 import UIKit
+import Domain
 
 enum NavigationAction: Action {
     case appDidLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)

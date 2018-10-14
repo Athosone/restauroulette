@@ -14,14 +14,15 @@ final public class Networker {
     private let urlSession: URLSession
     
     public init(urlSession: URLSession? = nil) {
-        self.urlSession = urlSession ?? makeUrlSession()
+        self.urlSession = urlSession ?? Networker.makeUrlSession()
     }
     
-    private func makeUrlSession(configuration: URLSessionConfiguration? = nil) {
+    private static func makeUrlSession(configuration: URLSessionConfiguration? = nil) -> URLSession {
         let urlSession = URLSession(configuration: configuration ?? makeDefaultConfiguration())
+        return urlSession
     }
     
-    private func makeDefaultConfiguration() -> URLSessionConfiguration {
+    private static func makeDefaultConfiguration() -> URLSessionConfiguration {
         let configuration = URLSessionConfiguration()
         return configuration
     }

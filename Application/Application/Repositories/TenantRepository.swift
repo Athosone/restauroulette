@@ -12,6 +12,6 @@ import CoreLocation
 import Domain
 
 public protocol TenantRepository {
-    func searchTenant(by location: CLLocation) -> Single<[Restaurant]>
-    func searchTenant(by term: String) -> Single<[Restaurant]>
+    func searchTenantBy(location: CLLocation) -> Single<[Restaurant]>
+    func searchTenantBy(term: String) -> Single<[Restaurant]>
 }
