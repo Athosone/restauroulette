@@ -10,9 +10,18 @@ import ReSwift
 import UIKit
 import Domain
 
-enum NavigationAction: Action {
-    case appDidLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)
-    case rootScene(TabBarController)
-    case listRestaurantsScene(UINavigationController)
-    case filters(UINavigationController)
+struct NavigationAction {
+    enum Application: Action {
+        case appDidLaunch(UIWindow, [UIApplication.LaunchOptionsKey: Any]?)
+        case rootScene(TabBarController)
+    }
+    
+    enum Restaurants: Action {
+        case listRestaurantsScene(UINavigationController)
+        case showRestaurantsDetails(restaurant: Restaurant)
+    }
+    
+    enum Filters: Action {
+        case filters(UINavigationController)
+    }
 }

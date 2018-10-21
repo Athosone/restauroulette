@@ -14,16 +14,19 @@ import ReSwift
 import RxSwift
 
 
+// MARK: - State
 struct ListRestaurantsState: StateType, Codable, Equatable {
     var restaurants: [Restaurant]?
     var isLoading: Bool = false
 }
 
+// MARK: - Actions
 enum ListTenantsActions: Action {
     case searchTenants(searchTerm: String)
     case didFindTenants(restaurants: [Restaurant])
 }
 
+// MARK: - Reducers
 func listTenantsReducer(action: Action, state: ListRestaurantsState?) -> ListRestaurantsState {
     let currentState = state ?? ListRestaurantsState(restaurants: nil, isLoading: false)
     guard let action = action as? ListTenantsActions else {
@@ -37,6 +40,7 @@ func listTenantsReducer(action: Action, state: ListRestaurantsState?) -> ListRes
     }
 }
 
+// MARK: - MiddleWares
 let fetchTenantsMiddleWare: Middleware<Any> = { dispatch, getState in
     var disposeBag: DisposeBag?
     return { next in
@@ -55,8 +59,6 @@ let fetchTenantsMiddleWare: Middleware<Any> = { dispatch, getState in
             default:
                 break
             }
-            
-            // call next middleware
             return next(action)
         }
     }

@@ -11,5 +11,3 @@ extension UIStoryboard: ReuseProvider {}
 extension UIViewController: ReuseProvider {}
 extension UITableViewCell: ReuseProvider {}
 extension UICollectionViewCell: ReuseProvider {}
-
-//extension ReuseProvider where Self: Coordinator {}

@@ -8,10 +8,19 @@
 
 import Foundation
 import UIKit
-import Application
+
 import ReSwift
 import RxSwift
 
+import Application
+import Domain
+import AthosUIKit
+
+protocol RestaurantPresenter {
+    func present(restaurant: Restaurant)
+}
+
+// MARK: - Subscribers
 final class ListRestaurantsSubscriber: StoreSubscriber {
     typealias StoreSubscriberStateType = ListRestaurantsState
     
@@ -34,15 +43,9 @@ final class ListRestaurantsSubscriber: StoreSubscriber {
             subscription.select { (appstate) in appstate.listRestaurantsState }
         }
     }
-
 }
 
-//final class RestaurantDetailSubscriber: StoreSubscriber {
-//    typealias StoreSubscriberStateType = RestaurantDetailState
-//
-//}
-
-
+// MARK: - Coordinator
 final class ListRestaurantsCoordinator: Coordinator {
     var rootViewController: UIViewController {
         return _rootViewController
@@ -72,13 +75,21 @@ final class ListRestaurantsCoordinator: Coordinator {
     }
 }
 
+// MARK: - Navigation
 extension ListRestaurantsCoordinator: ListRestaurantsNavigation {
-    func showRestaurantDetails() {
-        
+    func showRestaurantDetails(with restaurant: Restaurant) {
+        store.dispatch(NavigationAction.Restaurants.showRestaurantsDetails(restaurant: restaurant))
     }
     
     func showFilters() {
-        store.dispatch(NavigationAction.filters(_rootViewController))
-    }    
+        store.dispatch(NavigationAction.Filters.filters(_rootViewController))
+    }
 }
 
+extension ListRestaurantsCoordinator: RestaurantPresenter {
+    func present(restaurant: Restaurant) {
+        let vc = RestaurantDetailsViewController(tenant: TenantsCellViewModel(name: restaurant.name, image: UIImage()))
+        
+        _rootViewController.pushViewController(vc, animated: true)
+    }
+}

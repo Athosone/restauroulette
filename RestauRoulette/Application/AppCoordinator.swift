@@ -30,7 +30,7 @@ final class AppCoordinator: Coordinator {
     func start() {
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
-        store.dispatch(NavigationAction.rootScene(_rootViewController))
+        store.dispatch(NavigationAction.Application.rootScene(_rootViewController))
     }
 }
 

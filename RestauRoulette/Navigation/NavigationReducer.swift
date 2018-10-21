@@ -12,19 +12,18 @@ import ReSwift
 
 func navigationReducer(action: Action, state: NavigationState?) -> NavigationState {
     let currentState = state ?? NavigationState(nil, nil)
-    guard let action = action as? NavigationAction else {
-        return currentState
-    }
 
     switch (action) {
-    case .appDidLaunch(let window, let options):
+    case NavigationAction.Application.appDidLaunch(let window, let options):
         let appCoordinator = AppCoordinator(window: window, launchingOptions: options)
         return NavigationState(state?.coordinator, appCoordinator)
-    case .filters(let rootVC) :
+    case NavigationAction.Filters.filters(let rootVC) :
         return NavigationState(state?.coordinator, FiltersCoordinator(rootViewController: rootVC))
-    case .rootScene(let rootVC):
+    case NavigationAction.Application.rootScene(let rootVC):
         return NavigationState(state?.coordinator, RootSceneCoordinator(rootVC))
-    case .listRestaurantsScene(let rootVC):
-        return NavigationState(state?.coordinator, ListRestaurantsCoordinator(rootVC))
+    case let action as NavigationAction.Restaurants:
+        return restaurantNavigationReducer(action: action, state: currentState)
+    default:
+        return currentState
     }
 }

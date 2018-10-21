@@ -32,6 +32,18 @@ open class CollectionDataSource<T, U: Cell & UICollectionViewCell>: NSObject, UI
 open class TableDataSource<T, U: Cell & UITableViewCell>: NSObject, UITableViewDataSource where U.Model == T {
     open var dataSource: [T] = []
     
+    public override init() {
+        super.init()
+    }
+    
+    init(dataSource: [T]) {
+        self.dataSource = dataSource
+    }
+    
+    open func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
